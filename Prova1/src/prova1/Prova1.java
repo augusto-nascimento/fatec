@@ -25,7 +25,8 @@ public class Prova1 {
                     "--------------Menu principal ----------\n" +
                     "-- 1 - Carregar Vetor -----------------\n" +
                     "-- 2 - Mostrar Sequência Fibonacci ----\n" +
-                    "-- 9 - Finaliza -----------------------\n\n" +
+                    "-- 9 - Finaliza -----------------------\n" +
+                    "-- Se diferente, imprimir n + (n-1) + (n-2) + ... + 1 \n\n" +
                     "-- Digite uma opção:"));
             switch(opcao){
                 case 1:
@@ -43,9 +44,22 @@ public class Prova1 {
                 case 9:
                     System.exit(0);
                 default:
-                    System.out.println("Opção inválida");
+                    System.out.print(
+                            "A somatoria de " + Integer.toString(opcao) + 
+                            " é " + Integer.toString(Somatoria(opcao)) + "\n"
+                    );
             }
         }
+    }
+    static int Somatoria(int n) {
+        int soma = n;
+        if (soma >1) {
+            soma = soma + Somatoria(n-1);
+        }
+        else {
+            soma = 1;
+        }
+        return soma;
     }
     static int[] CarregaVetor() {
         int[] vetor;
