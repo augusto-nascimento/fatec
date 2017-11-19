@@ -1,0 +1,3 @@
+Augusto|nome|1
+aluno2|sobre2|2
+Augusto|asdisad'|4
