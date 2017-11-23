@@ -27,14 +27,14 @@ public class ClasseMetodos {
     System.out.println("GRAVAÇÃO FEITA COM SUCESSO ");	
 //    writer.close();
   return aluno;
-}	
+ }
 
 
 	
  public void LerAluno ( Aluno[ ] aluno ) throws IOException{
     int i;
     String fileName = "ArquivoAluno.txt";	
-    BufferedReader ler = new BufferedReader(new FileReader( fileName ));	
+    BufferedReader ler = new BufferedReader(new FileReader( fileNa00000me ));	
     for (i = 0 ; i < 3 ; i++)	
         aluno[i] = new Aluno();
         for (i = 0 ; i < 3 ; i++)   {	
